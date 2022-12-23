@@ -1,0 +1,131 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400&family=Varela+Round&display=swap');
+
+body{
+  background-color: antiquewhite;
+  
+}
+
+*{
+  margin: 0;
+  padding: 0;
+ }
+
+
+nav{
+  font-family: 'Ubuntu', sans-serif;
+  color: white;
+  
+}
+
+.home{
+  cursor: pointer;
+}
+
+nav ul{
+  display:flex;
+  align-items: center;
+  list-style-type: none;     /* to remove the bullets */
+  height:65px;
+  background-color: black;
+}
+
+nav ul li{
+  padding:0 12px;
+}
+
+.brand img{
+  width:44px;
+  margin: 0 5px;
+}
+
+.brand{
+  display: flex;
+  align-items: center;
+  font-weight: bolder;      /*for the text Spotify*/
+  font-size: 1.3rem;
+}
+
+.container{
+  min-height:60vh;          /* important*/
+  background-color: black;
+  color:white;
+  font-family: 'Varela Round', sans-serif;
+  display: flex;            /* important*/
+  margin:23px auto;
+  width:70%;
+  border-radius:14px;
+  padding: 30px;            /* important*/
+  background-image: url(bg.jpg);     /* important*/
+  background-position: center;       /* SO */
+  background-repeat: no-repeat;      /* SO */
+  background-size: cover;            /* SO */
+}
+
+.bottom{
+  position: sticky;         /* important*/
+  height: 92px;
+  background-color: black;
+  color: white;           /* for icons*/
+  bottom: 0;
+  display: flex;            /* done for the progress bar*/ 
+  justify-content:center;   /* done for the progress bar*/ 
+  align-items: center;      /* done for the progress bar*/ 
+  flex-direction: column;
+  font-family: 'Varela Round', sans-serif;
+}
+
+.icons{ 
+  margin-top:15px;      
+}
+
+.icons i{
+  cursor: pointer;          /* important */
+  margin:0 3px;
+}
+
+#myProgressBar{
+  width:80vw;               /* important*/
+           /* text-align: center; will not work*/
+  cursor: pointer;
+ 
+}
+
+.songItem{
+  display: flex;
+  height:40px;              /* important*/
+  background-color: white;
+  color: black;
+  justify-content: space-between;
+  align-items: center;
+  border-radius:34px;
+  margin:30px 0;
+}
+
+.songItem img{
+  height:40px;
+  margin: 15px;
+  border-radius: 50%;
+}
+
+.songListDisplay{
+  margin:10px;
+  padding:5px;
+}
+
+.songListDisplay i{
+  cursor: pointer;
+}
+
+.songInfo{                   /* important*/
+  position: absolute;
+  left: 10vw;
+}
+
+.songInfo img{                /*for GIF*/
+  opacity: 0;
+  transition: opacity 0.3s ease-in ;
+}
+
+                                            
+
+
